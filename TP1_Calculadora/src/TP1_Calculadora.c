@@ -5,8 +5,8 @@
 #include "utn.h"
 
 int main(void) {
-		float numero1 = 0;
-		float numero2 = 0;
+		float numero1 ;
+		float numero2 ;
 		float resultados[6];
 		char operaciones[6][14] = {"suma","resta","multiplicacion","division","factorial","factorial"};
 		int opcionMenu;
@@ -14,7 +14,8 @@ int main(void) {
 		int flagOperando1 = -1;
 		int flagOperando2 = -1;
 
-		menuOpciones(numero1,numero2);
+
+		menuOpciones(numero1,numero2,flagOperando1, flagOperando2);
 		utn_getMenu(&opcionMenu, "\n Que desea hacer?", "\n Error - opcion incorrecta",1, 5, 3);
 		do {
 			switch (opcionMenu) {
@@ -74,7 +75,7 @@ int main(void) {
 							printf("\n error");
 							break;
 			}
-			menuOpciones(numero1,numero2);
+			menuOpciones(numero1,numero2,flagOperando1, flagOperando2);
 			utn_getMenu(&opcionMenu, "\n Que desea hacer?", "Error - opcion incorrecta",1, 5, 3);
 			}while(opcionMenu != 5);
 

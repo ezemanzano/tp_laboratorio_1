@@ -15,6 +15,6 @@ float sumar (float operador1,float operador2);
 float restar (float operador1,float operador2);
 float multiplicar(float operador1,float operador2);
 int factorial(float operador1, float* pFactorial);
-void  menuOpciones(float operando1,float operando2);
+void  menuOpciones(float operando1,float operando2, int init1, int init2);
 
 #endif /* UTN_H_ */
