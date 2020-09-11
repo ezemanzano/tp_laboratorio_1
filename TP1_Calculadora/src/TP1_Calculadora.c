@@ -5,10 +5,10 @@
 #include "utn.h"
 
 int main(void) {
-		float numero1 ;
-		float numero2 ;
+		float numero1 = 0;
+		float numero2 = 0;
 		float resultados[6];
-		char operaciones[6][14] = {"suma","resta","multiplicacion","division","factorial","factorial"};
+		char operaciones[6][20] = {"suma","resta","multiplicacion","division","factorial","factorial"};
 		int opcionMenu;
 		int flagCuentas = 0;
 		int flagOperando1 = -1;

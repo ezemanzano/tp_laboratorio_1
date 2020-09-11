@@ -176,23 +176,23 @@ int factorial(float operador1,float* pFactorial){
  */
 
 void  menuOpciones(float operando1,float operando2, int init1, int init2){
-	printf ("1) Ingresar 1er Operando \n");
+	printf ("\n1) Ingresar 1er Operando \n");
 	printf ("2) Ingresar 2do Operando \n");
 	printf ("3) Calcular las operaciones \n");
 	printf ("4) Mostrar Resultados \n");
 	printf ("5) SALIR \n");
 	if (init1 == 0 && init2 == 0 ){
-		printf ("Operando 1 = %.2f", operando1);
-		printf ("operando 2 = %.2f", operando2);
+		printf ("\n Operando 1 = %.2fkhgfdds", operando1);
+		printf ("\n Operando 2 = %.2f", operando2);
 	}else if (init1 == -1 && init2 == 0){
-	printf ("Operando 1 = Sin ingresar");
-	printf ("operando 2 = %.2f", operando2);
+	printf ("\n Operando 1 = Sin ingresar");
+	printf ("\n Operando 2 = %.2f", operando2);
 	} else if (init1 == 0 && init2 == -1){
-		printf ("operando 1 = %.2f", operando1);
-		printf ("Operando 2 = Sin ingresar");
+		printf ("\n Operando 1 = %.2f", operando1);
+		printf ("\n Operando 2 = Sin ingresar");
 	} else {
-		printf ("Operando 1 = Sin ingresar");
-		printf ("Operando 2 = Sin ingresar");
+		printf ("\n Operando 1 = Sin ingresar");
+		printf ("\n Operando 2 = Sin ingresar");
 	}
 
 }
