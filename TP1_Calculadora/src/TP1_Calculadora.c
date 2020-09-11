@@ -8,7 +8,7 @@ int main(void) {
 		float numero1 = 0;
 		float numero2 = 0;
 		float resultados[6];
-		char operaciones[6][20] = {"suma","resta","multiplicacion","division","factorial","factorial"};
+		char operaciones[6][40] = {"suma","resta","multiplicacion","division","factorial Operador 1","factorial Operador 2"};
 		int opcionMenu;
 		int flagCuentas = 0;
 		int flagOperando1 = -1;
@@ -47,11 +47,11 @@ int main(void) {
 							}
 						if (factorial(numero1,&resultados[4]) ==0 ){
 							} else {
-							printf ("\n Error primer operando negativo - no se pudo");
+							printf ("\n Error en el factorial - primer operando negativo - no se pudo");
 							}
 							if (factorial(numero2,&resultados[5]) ==0 ){
 							} else {
-							printf ("\n Error primer operando negativo - no se pudo");
+							printf ("\n Error en el factorial - segundo operando negativo - no se pudo");
 							}
 						printf ("\n Operaciones Realizadas...");
 						flagCuentas = 1;

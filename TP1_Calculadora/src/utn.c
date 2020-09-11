@@ -146,7 +146,7 @@ int factorial(float operador1,float* pFactorial){
 		int retorno = -1;
 		if (pFactorial != NULL) {
 			if (operador1>=0.00){
-			for (float j = 1.00 ; j<=operador1; j++) {
+			for (int j = 1.00 ; j<=operador1; j++) {
 			factorialOperador1 = factorialOperador1 * j;
 			*pFactorial = factorialOperador1;
 			retorno = 0;
@@ -182,7 +182,7 @@ void  menuOpciones(float operando1,float operando2, int init1, int init2){
 	printf ("4) Mostrar Resultados \n");
 	printf ("5) SALIR \n");
 	if (init1 == 0 && init2 == 0 ){
-		printf ("\n Operando 1 = %.2fkhgfdds", operando1);
+		printf ("\n Operando 1 = %.2f", operando1);
 		printf ("\n Operando 2 = %.2f", operando2);
 	}else if (init1 == -1 && init2 == 0){
 	printf ("\n Operando 1 = Sin ingresar");
