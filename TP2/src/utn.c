@@ -25,12 +25,39 @@ static int esNombre (char*cadena, int limite);
 * \param int longitud -> cadena length
 * \return 1
 */
+/*
 static int myGets (char* cadena, int longitud){
 		__fpurge (stdin);
 		fgets(cadena,longitud,stdin);
 		cadena[strnlen(cadena,sizeof(cadena))-1]='\0';
 		return 1;
 }
+*/
+static int myGets(char* cadena, int longitud){
+	int retorno = -1; //ERROR
+	char bufferString[4096];
+
+	if(cadena != NULL && longitud > 0)
+	{
+		__fpurge(stdin);
+		if(fgets(bufferString,sizeof(bufferString),stdin) != NULL)
+		{
+			if(bufferString[strnlen(bufferString,sizeof(bufferString))-1] == '\n')
+			{
+				bufferString[strnlen(bufferString,sizeof(bufferString))-1] = '\0';
+			}
+			if(strlen(bufferString) <= longitud)
+			{
+				strncpy(cadena,bufferString,longitud);
+				retorno = 1; //EXITO
+			}
+
+		}
+
+	}
+	return retorno;
+}
+
 /** \brief Get an integer with mygets and checks if the string are just numbers.
 * position of the array
 * \param int * pResultado -> Pointer where to save the result
